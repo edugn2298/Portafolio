@@ -32,3 +32,31 @@
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
+
+/* Estilos para la barra de deslizamiento */
+::-webkit-scrollbar  {
+  width: 10px; /* Ancho completo */
+  height: 10px; /* Altura de la barra */
+  background-color: rgb(251,251,251,0); /* Fondo transparente */
+  position: relative;
+}
+
+/* Estilos para el control deslizante */
+::-webkit-scrollbar-thumb {
+  -webkit-appearance: none; /* Elimina la apariencia predeterminada */
+  appearance: none;
+  width: 20px; /* Ancho del control deslizante */
+  height: 20px; /* Altura del control deslizante */
+  background-color: lightgray; /* Color gris claro */
+  border-radius: 50%; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilos adicionales para otros navegadores */
+::-webkit-scrollbar-track  {
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+}

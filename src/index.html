@@ -1,46 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <link rel="stylesheet" href="/src/animation.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
-<body id="content" class="bg-gradient text-slate-50 dark:text-slate-800 ">
-  <nav class="flex justify-between mx-4 py-2 px-6 items-center font-semibold">
-    <div class="flex justify-start gap-6 items-center">
-      <img src="/img/foto-portafolio.jpg" alt="Mi Foto" class=" w-[40px] h-[40px] rounded-full ">
-      <p>Eduardo Dev</p>
-      <div class="toggle-container">
-        <button id="toggle-mode" class="fa-solid fa-toggle-on"></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body id="content" class="bg-gradient text-slate-50 dark:text-slate-800">
+    <nav class="flex justify-between mx-4 py-2 px-6 items-center font-semibold">
+      <div class="flex justify-start gap-6 items-center">
+        <img
+          src="/img/foto-portafolio.jpg"
+          alt="Mi Foto"
+          class="w-[40px] h-[40px] rounded-full"
+        />
+        <p>Eduardo Dev</p>
       </div>
-    </div>
-    <div class="flex justify-end gap-8">
-      <p>Sobre mí</p>
-      <p>Habilidades</p>
-      <p>Proyectos</p>
-    </div>
-  </nav>
-  <main>
+      <div class="text-lg cursor-pointer sm:hidden">
+        <p>X</p>
+      </div>
+      <div class="hidden sm:flex justify-end gap-8">
+        <p>Sobre mí</p>
+        <p>Habilidades</p>
+        <p>Proyectos</p>
+      </div>
+    </nav>
 
-    <h1>Hola, soy Eduardo</h1>
-    <p>Mi objetivo es crear sitios web visualmente atractivos y funcionales que brinden una excelente experiencia al usuario. Me encanta aprender nuevas tecnologías y seguir las mejores prácticas de diseño y desarrollo. Siempre estoy buscando oportunidades para mejorar mis habilidades y contribuir a proyectos emocionantes. ¡Bienvenido a mi portafolio en línea!</p>
-    <div class="flex justify-start">
+    <main
+      class="my-3 px-5 py-5 flex flex-col gap-8 sm:flex-row sm:justify-center sm:items-center max-w-5xl mx-auto h-full"
+    >
+      <div class="flex flex-col gap-4 max-w-md justify-center items-center">
+        <h1 class="text-[25px] font-light">Hola, soy Eduardo</h1>
+        <h2 class="text-[40px] text-black font-extrabold">Web Developer</h2>
+        <div class="sm:hidden w-[350px] h-[350px]">
+          <img
+            src="/img/foto-portafolio.jpg"
+            alt="Mi Foto"
+            class="rounded-full"
+          />
+        </div>
+        <p>
+          Mi objetivo es crear sitios web visualmente atractivos y funcionales
+          que brinden una excelente experiencia al usuario. Me encanta aprender
+          nuevas tecnologías y seguir las mejores prácticas de diseño y
+          desarrollo.¡Bienvenido a mi portafolio en línea!
+        </p>
+      </div>
+      <div class="hidden sm:flex">
+        <img
+          src="/img/foto-portafolio.jpg"
+          alt="Mi Foto"
+          class="w-[350px] h-[350px] rounded-full"
+        />
+      </div>
+    </main>
+    <div class="flex justify-center gap-8 my-4">
       <a href="">
-        <img src="/img/github.svg" alt="GitHub" class=" w-[35px] h-[35px] ">
+        <img
+          src="/img/github.svg"
+          alt="GitHub"
+          class="w-[35px] h-[35px] text-slate-50 dark:text-slate-600"
+        />
       </a>
       <a href="">
-        <img src="/img/instagram.svg" alt="Instagram" class=" w-[35px] h-[35px] ">
+        <img
+          src="/img/instagram.svg"
+          alt="Instagram"
+          class="w-[35px] h-[35px] text-slate-50 dark:text-slate-600"
+        />
       </a>
       <a href="">
-        <img src="/img/linkedin.svg" alt="LinkeIn" class=" w-[35px] h-[35px] ">
+        <img
+          src="/img/linkedin.svg"
+          alt="LinkeIn"
+          class="w-[35px] h-[35px] text-slate-50 dark:text-slate-600"
+        />
       </a>
     </div>
-    
-    
-  </main>
-  <script src="app.js"></script>
-</body>
+    <section class="max-w-5xl mx-auto">
+      <article
+        class="flex flex-col justify-center items-center gap-8 px-4 py-4"
+      >
+        <h2 class="text-[25px] font-light">Sobre mí</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at
+          corrupti temporibus quidem reiciendis eligendi qui illum impedit
+          sapiente nam magni totam, dolorem ad quae eveniet, nulla, blanditiis
+          soluta ex? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Cupiditate repellat modi temporibus enim mollitia, voluptatibus, porro
+          corrupti ad libero ea at cum aspernatur natus dolor asperiores.
+          Dolores earum obcaecati laborum?
+        </p>
+      </article>
+      <article
+        class="flex flex-col justify-center items-center gap-8 px-4 py-4"
+      >
+        <h2 class="text-[25px] font-light">Habilidades</h2>
+        <div
+          class="grid grid-cols-2 grid-flow-row gap-6 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <img src="/img/html-5.png" alt="HTML" class="max-w-60 max-h-60" />
+          <img src="/img/css-3.png" alt="CSS" class="max-w-60 max-h-60" />
+          <img src="/img/js.png" alt="JS" class="max-w-60 max-h-60" />
+          <img src="/img/nodejs.png" alt="NODE" class="max-w-60 max-h-60" />
+          <img src="/img/php.png" alt="PHP" class="max-w-60 max-h-60" />
+          <img src="/img/python.png" alt="PYTHON" class="max-w-60 max-h-60" />
+          <img src="/img/react.svg" alt="REACT" class="max-w-60 max-h-60" />
+        </div>
+      </article>
+      <article
+        class="flex flex-col justify-center items-center gap-8 px-4 py-4"
+      >
+        <h2 class="text-[25px] font-light" >Proyectos</h2>
 
+      </article>
+    </section>
+    <footer></footer>
+    <script src="app.js"></script>
+  </body>
 </html>
