@@ -20,13 +20,13 @@
         />
         <p>Eduardo Dev</p>
       </div>
-      <div class="text-lg cursor-pointer sm:hidden">
+      <div class="text-lg cursor-pointer sm:hidden  text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
         <p>X</p>
       </div>
       <div class="hidden sm:flex justify-end gap-8">
-        <p>Sobre mí</p>
-        <p>Habilidades</p>
-        <p>Proyectos</p>
+        <a href="#sobre-mi" class="cursor-pointer text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Sobre mí</a>
+        <a href="#habilidades" class="cursor-pointer text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Habilidades</a>
+        <a href="#proyectos" class="cursor-pointer text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Proyectos</a>
       </div>
     </nav>
 
@@ -50,8 +50,8 @@
           desarrollo.¡Bienvenido a mi portafolio en línea!
         </p>
         <div class="flex justify-center gap-8 my-4">
-          <a href="">
-            Donwload CV
+          <a href="" class="bg-transparent text-black hover:bg-blue-500  font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            Download CV
           </a>
           <a href="">
             <img
@@ -79,7 +79,7 @@
     </main>
     <section class="max-w-5xl mx-auto">
       <article
-        class="flex flex-col justify-center items-center gap-8 px-4 py-4"
+        id="sobre-mi" class="flex flex-col justify-center items-center gap-8 px-4 py-4"
       >
         <h2 class="text-[40px] text-black font-bold">Sobre mí</h2>
         <p>
@@ -93,7 +93,7 @@
         </p>
       </article>
       <article
-        class="flex flex-col justify-center items-center gap-8 px-4 py-4"
+        id="habilidades" class="flex flex-col justify-center items-center gap-8 px-4 py-4"
       >
         <h2 class="text-[40px] text-black font-bold">Habilidades</h2>
         <div
@@ -110,24 +110,29 @@
         </div>
       </article>
       <article
-        class="flex flex-col justify-center items-center gap-8 px-4 py-4"
+        id="proyectos"class="flex flex-col justify-center items-center gap-8 px-4 py-4"
       >
         <h2 class="text-[40px] text-black font-bold" >Proyectos</h2>
-        <div class="flex justify-around gap-5" >
-          <div>
-            <img src="/img/Youtube-Clone.png" alt="Youtube clon">
+        <div class="flex justify-around gap-5 items-center p-5 bg-slate-700 rounded-3xl " >
+          <div class="hover:bg-slate-600">
+            <a href="https://edugn2298.github.io/Youtube-clone/" target="_blank">
+              <img src="/img/Youtube-Clone.png" alt="Youtube clon">
+            </a>
           </div>
-          <div>
-            <h3>Youtube Clon</h3>
+          <div class="flex flex-col gap-8">
+            <a href="https://edugn2298.github.io/Youtube-clone/" target="_blank" class="text-[20px] text-white font-semibold mx-auto ">Youtube Clone</a>
             <p>“Este proyecto fue desarrollado utilizando HTML, CSS y JavaScript. Al principio, representó un desafío, ya que requirió un sólido manejo de Flexbox y Grid. Además, utilicé Fetch para consultar un archivo JSON y obtener la información de los videos almacenados allí, para luego mostrarlos en el DOM.”</p>
           </div>
         </div>
-        <div class="flex justify-around gap-5">
+        <div class="flex justify-around gap-5 items-center p-5 bg-slate-700 rounded-3xl ">
           <div>
-            <img src="/img/Movistar.png" alt="Youtube clon">
+            <a href="https://edugn2298.github.io/Movistar-/" target="_blank">
+              <img src="/img/Movistar.png" alt="Movistar">
+            </a>
+            
           </div>
-          <div>
-            <h3>Movistar</h3>
+          <div class="flex flex-col gap-8">
+            <a href="https://edugn2298.github.io/Movistar-/" target="_blank" class="text-[20px] text-white font-semibold mx-auto ">Movistar</a>
             <p>“Este proyecto fue realizado con Sass, lo cual resultó muy interesante. Aprendí a manejar mi código de manera eficiente al trabajar con estilos. Elegir los mixins adecuados y utilizar componentes, variables y condicionales fue fundamental para lograr un diseño efectivo.”</p>
           </div>
         </div>
